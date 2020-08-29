@@ -32,3 +32,33 @@ public class MDarray {
         System.out.println(iMax + " " + jMax);
     }
 }
+/*
+I like the use of int max = Integer.MIN_VALUE
+
+class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int number1 = in.nextInt();
+        int number2 = in.nextInt();
+        int[][] array = new int[number1][number2];
+        for (int i = 0; i < number1; i++) {
+            for (int j = 0; j < number2; j++) {
+                array[i][j] = in.nextInt();
+            }
+        }
+        int max = Integer.MIN_VALUE;
+        int rowIndex = 0;
+        int columnIndex = 0;
+        for (int i = 0; i < number1; i++) {
+            for (int j = 0; j < number2; j++) {
+                if (array[i][j] > max) {
+                    max = array[i][j];
+                    rowIndex = i;
+                    columnIndex = j;
+                }
+            }
+        }
+        System.out.println(rowIndex + " " + columnIndex);
+    }
+}
+*/
